@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom:"
+            android:textColor="#F6FF"
+            android:textSize="40dp"></TextView>
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+
+
+            android:textColor="#FF12">
+
+        </EditText>
+
+        <Button
+
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="60dp"
+
+
+            android:orientation="horizontal"
+            android:text="ok"
+            android:textColor="#FFF2"
+            android:textSize="30dp"
+
+            >
+
+        </Button>
+    </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="80dp"
+          android:orientation="vertical"
+          >
+
+          <TextView
+              android:id="@+id/affich"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#9C27B0"
+              android:textSize="50dp"
+              android:layout_marginLeft="30dp">
+
+          </TextView>
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Enregistré"
+               android:layout_marginLeft="34dp"
+               android:onClick="merci"
+               android:background="@drawable/rectangle"
+               >
+
+           </Button>
+      </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="crochez une des choix suivants "
+
+></TextView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JAVA"
+            android:textColor="#115C55"
+            android:id="@+id/c1"
+            android:layout_marginLeft="20dp"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++"
+            android:textColor="#882A0C"
+            android:id="@+id/c2"
+            android:layout_marginLeft="20dp"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            android:textColor="#17246E"
+            android:id="@+id/c3"
+            android:layout_marginLeft="20dp"
+            />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:layout_marginLeft="30dp"
+    android:textColor="@color/black"
+    android:text="Confirmer"
+    android:id="@+id/but"
+    android:onClick="conf"
+    >
+
+</Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/choix"
+            ></TextView>
+    </LinearLayout>
+</RelativeLayout>

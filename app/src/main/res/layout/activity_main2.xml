@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="100dp"
+        >
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@mipmap/ensaf"
+            android:onClick="retour"
+
+            >
+
+        </ImageView>
+        <EditText
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/aff"
+            >
+
+        </EditText>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="vous etes">
+
+            <RadioButton
+                android:layout_width="149dp"
+                android:layout_height="73dp"
+                android:id="@+id/r1"
+                android:text="celibataire"></RadioButton>
+
+            <RadioButton
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/r2"
+                android:text="mariée"></RadioButton>
+
+            <RadioButton
+                android:layout_width="149dp"
+                android:layout_height="61dp"
+                android:text="divorcée"
+                android:id="@+id/r3"
+                />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="150dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:onClick="ok"
+            ></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch"
+            ></TextView>
+    </LinearLayout>
+</RelativeLayout>
